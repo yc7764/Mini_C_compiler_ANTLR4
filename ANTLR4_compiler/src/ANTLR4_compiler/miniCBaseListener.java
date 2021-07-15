@@ -159,13 +159,13 @@ public class miniCBaseListener implements miniCListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFORMAL_PARAMETER(miniCParser.FORMAL_PARAMETERContext ctx) { }
+	@Override public void enterFORMAL_PARA(miniCParser.FORMAL_PARAContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFORMAL_PARAMETER(miniCParser.FORMAL_PARAMETERContext ctx) { }
+	@Override public void exitFORMAL_PARA(miniCParser.FORMAL_PARAContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -195,25 +195,25 @@ public class miniCBaseListener implements miniCListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPARAMETER_DCL(miniCParser.PARAMETER_DCLContext ctx) { }
+	@Override public void enterPARA_DCL(miniCParser.PARA_DCLContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPARAMETER_DCL(miniCParser.PARAMETER_DCLContext ctx) { }
+	@Override public void exitPARA_DCL(miniCParser.PARA_DCLContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCOMPOUND_STMT(miniCParser.COMPOUND_STMTContext ctx) { }
+	@Override public void enterCOMPOUND_STAT(miniCParser.COMPOUND_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCOMPOUND_STMT(miniCParser.COMPOUND_STMTContext ctx) { }
+	@Override public void exitCOMPOUND_STAT(miniCParser.COMPOUND_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -327,13 +327,13 @@ public class miniCBaseListener implements miniCListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSTMT_LIST(miniCParser.STMT_LISTContext ctx) { }
+	@Override public void enterSTAT_LIST(miniCParser.STAT_LISTContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSTMT_LIST(miniCParser.STMT_LISTContext ctx) { }
+	@Override public void exitSTAT_LIST(miniCParser.STAT_LISTContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -375,13 +375,13 @@ public class miniCBaseListener implements miniCListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEXP_STMT(miniCParser.EXP_STMTContext ctx) { }
+	@Override public void enterEXP_STAT(miniCParser.EXP_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEXP_STMT(miniCParser.EXP_STMTContext ctx) { }
+	@Override public void exitEXP_STAT(miniCParser.EXP_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -399,49 +399,49 @@ public class miniCBaseListener implements miniCListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIF_STMT(miniCParser.IF_STMTContext ctx) { }
+	@Override public void enterIF_STAT(miniCParser.IF_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIF_STMT(miniCParser.IF_STMTContext ctx) { }
+	@Override public void exitIF_STAT(miniCParser.IF_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIF_ELSE_STMT(miniCParser.IF_ELSE_STMTContext ctx) { }
+	@Override public void enterIF_ELSE_STAT(miniCParser.IF_ELSE_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIF_ELSE_STMT(miniCParser.IF_ELSE_STMTContext ctx) { }
+	@Override public void exitIF_ELSE_STAT(miniCParser.IF_ELSE_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWHILE_STMT(miniCParser.WHILE_STMTContext ctx) { }
+	@Override public void enterWHILE_STAT(miniCParser.WHILE_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWHILE_STMT(miniCParser.WHILE_STMTContext ctx) { }
+	@Override public void exitWHILE_STAT(miniCParser.WHILE_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRETURN_STMT(miniCParser.RETURN_STMTContext ctx) { }
+	@Override public void enterRETURN_STAT(miniCParser.RETURN_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRETURN_STMT(miniCParser.RETURN_STMTContext ctx) { }
+	@Override public void exitRETURN_STAT(miniCParser.RETURN_STATContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -471,13 +471,13 @@ public class miniCBaseListener implements miniCListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterASSIGN(miniCParser.ASSIGNContext ctx) { }
+	@Override public void enterASSIGN_OP(miniCParser.ASSIGN_OPContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitASSIGN(miniCParser.ASSIGNContext ctx) { }
+	@Override public void exitASSIGN_OP(miniCParser.ASSIGN_OPContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -903,13 +903,13 @@ public class miniCBaseListener implements miniCListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterACTUAL_PARAMETER(miniCParser.ACTUAL_PARAMETERContext ctx) { }
+	@Override public void enterACTUAL_PARA(miniCParser.ACTUAL_PARAContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitACTUAL_PARAMETER(miniCParser.ACTUAL_PARAMETERContext ctx) { }
+	@Override public void exitACTUAL_PARA(miniCParser.ACTUAL_PARAContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

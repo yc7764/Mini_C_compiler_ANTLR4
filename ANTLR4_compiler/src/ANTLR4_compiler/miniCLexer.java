@@ -1,6 +1,5 @@
 // Generated from miniC.g4 by ANTLR 4.9.2
 package ANTLR4_compiler;
-
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;

@@ -10,15 +10,22 @@ public class AST_builder {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		CharStream in = new ANTLRInputStream("void main() { int i; }");
-		miniCLexer lexer = new miniCLexer(in);
-		TokenStream tokenStream = new CommonTokenStream(lexer);
-		miniCParser parser = new miniCParser(tokenStream);
-		ParseTree tree = parser.mini_c();
-		
-		TreeViewer viewer = new TreeViewer(Arrays.asList(
-                parser.getRuleNames()),tree);
-		viewer.open();
+		CharStream input = new ANTLRInputStream("const int global=1; void main() {int a=2; int b; b = a+global;}");
+		miniCLexer lexer = new miniCLexer(input);
+	    CommonTokenStream commonTokenStream = new CommonTokenStream(lexer);
+	    miniCParser minicparser = new miniCParser(commonTokenStream);
+	    
+	    ParseTree pt = minicparser.mini_c();
+	    BuildAstVisitor builder = new BuildAstVisitor();
+	    ASTNode ast = builder.visit(pt);
+	    TreeViewer viewer1 = 
+        		new TreeViewer(Arrays.asList(minicparser.getRuleNames()),pt);
+        TreeViewer viewer2 = 
+        		new TreeViewer(Arrays.asList(builder.getRuleNames()),ast);
+        //viewer1.open();
+        viewer2.open();
+        ASTVisitor sv = new ASTVisitor();
+        sv.visit(ast);
 	}
 
 }

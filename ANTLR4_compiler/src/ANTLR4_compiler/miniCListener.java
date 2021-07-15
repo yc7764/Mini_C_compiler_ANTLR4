@@ -1,6 +1,5 @@
 // Generated from miniC.g4 by ANTLR 4.9.2
 package ANTLR4_compiler;
-
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -143,17 +142,17 @@ public interface miniCListener extends ParseTreeListener {
 	 */
 	void exitFunction_name(miniCParser.Function_nameContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code FORMAL_PARAMETER}
+	 * Enter a parse tree produced by the {@code FORMAL_PARA}
 	 * labeled alternative in {@link miniCParser#formal_param}.
 	 * @param ctx the parse tree
 	 */
-	void enterFORMAL_PARAMETER(miniCParser.FORMAL_PARAMETERContext ctx);
+	void enterFORMAL_PARA(miniCParser.FORMAL_PARAContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code FORMAL_PARAMETER}
+	 * Exit a parse tree produced by the {@code FORMAL_PARA}
 	 * labeled alternative in {@link miniCParser#formal_param}.
 	 * @param ctx the parse tree
 	 */
-	void exitFORMAL_PARAMETER(miniCParser.FORMAL_PARAMETERContext ctx);
+	void exitFORMAL_PARA(miniCParser.FORMAL_PARAContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link miniCParser#opt_formal_param}.
 	 * @param ctx the parse tree
@@ -175,29 +174,29 @@ public interface miniCListener extends ParseTreeListener {
 	 */
 	void exitFormal_param_list(miniCParser.Formal_param_listContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code PARAMETER_DCL}
+	 * Enter a parse tree produced by the {@code PARA_DCL}
 	 * labeled alternative in {@link miniCParser#param_dcl}.
 	 * @param ctx the parse tree
 	 */
-	void enterPARAMETER_DCL(miniCParser.PARAMETER_DCLContext ctx);
+	void enterPARA_DCL(miniCParser.PARA_DCLContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code PARAMETER_DCL}
+	 * Exit a parse tree produced by the {@code PARA_DCL}
 	 * labeled alternative in {@link miniCParser#param_dcl}.
 	 * @param ctx the parse tree
 	 */
-	void exitPARAMETER_DCL(miniCParser.PARAMETER_DCLContext ctx);
+	void exitPARA_DCL(miniCParser.PARA_DCLContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code COMPOUND_STMT}
+	 * Enter a parse tree produced by the {@code COMPOUND_STAT}
 	 * labeled alternative in {@link miniCParser#compound_st}.
 	 * @param ctx the parse tree
 	 */
-	void enterCOMPOUND_STMT(miniCParser.COMPOUND_STMTContext ctx);
+	void enterCOMPOUND_STAT(miniCParser.COMPOUND_STATContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code COMPOUND_STMT}
+	 * Exit a parse tree produced by the {@code COMPOUND_STAT}
 	 * labeled alternative in {@link miniCParser#compound_st}.
 	 * @param ctx the parse tree
 	 */
-	void exitCOMPOUND_STMT(miniCParser.COMPOUND_STMTContext ctx);
+	void exitCOMPOUND_STAT(miniCParser.COMPOUND_STATContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code DCL_LIST}
 	 * labeled alternative in {@link miniCParser#opt_dcl_list}.
@@ -301,17 +300,17 @@ public interface miniCListener extends ParseTreeListener {
 	 */
 	void exitOpt_number(miniCParser.Opt_numberContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code STMT_LIST}
+	 * Enter a parse tree produced by the {@code STAT_LIST}
 	 * labeled alternative in {@link miniCParser#opt_stat_list}.
 	 * @param ctx the parse tree
 	 */
-	void enterSTMT_LIST(miniCParser.STMT_LISTContext ctx);
+	void enterSTAT_LIST(miniCParser.STAT_LISTContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code STMT_LIST}
+	 * Exit a parse tree produced by the {@code STAT_LIST}
 	 * labeled alternative in {@link miniCParser#opt_stat_list}.
 	 * @param ctx the parse tree
 	 */
-	void exitSTMT_LIST(miniCParser.STMT_LISTContext ctx);
+	void exitSTAT_LIST(miniCParser.STAT_LISTContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code NULL2}
 	 * labeled alternative in {@link miniCParser#opt_stat_list}.
@@ -345,17 +344,17 @@ public interface miniCListener extends ParseTreeListener {
 	 */
 	void exitStatement(miniCParser.StatementContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code EXP_STMT}
+	 * Enter a parse tree produced by the {@code EXP_STAT}
 	 * labeled alternative in {@link miniCParser#expression_st}.
 	 * @param ctx the parse tree
 	 */
-	void enterEXP_STMT(miniCParser.EXP_STMTContext ctx);
+	void enterEXP_STAT(miniCParser.EXP_STATContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code EXP_STMT}
+	 * Exit a parse tree produced by the {@code EXP_STAT}
 	 * labeled alternative in {@link miniCParser#expression_st}.
 	 * @param ctx the parse tree
 	 */
-	void exitEXP_STMT(miniCParser.EXP_STMTContext ctx);
+	void exitEXP_STAT(miniCParser.EXP_STATContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link miniCParser#opt_expression}.
 	 * @param ctx the parse tree
@@ -367,53 +366,53 @@ public interface miniCListener extends ParseTreeListener {
 	 */
 	void exitOpt_expression(miniCParser.Opt_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code IF_STMT}
+	 * Enter a parse tree produced by the {@code IF_STAT}
 	 * labeled alternative in {@link miniCParser#if_st}.
 	 * @param ctx the parse tree
 	 */
-	void enterIF_STMT(miniCParser.IF_STMTContext ctx);
+	void enterIF_STAT(miniCParser.IF_STATContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code IF_STMT}
+	 * Exit a parse tree produced by the {@code IF_STAT}
 	 * labeled alternative in {@link miniCParser#if_st}.
 	 * @param ctx the parse tree
 	 */
-	void exitIF_STMT(miniCParser.IF_STMTContext ctx);
+	void exitIF_STAT(miniCParser.IF_STATContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code IF_ELSE_STMT}
+	 * Enter a parse tree produced by the {@code IF_ELSE_STAT}
 	 * labeled alternative in {@link miniCParser#if_st}.
 	 * @param ctx the parse tree
 	 */
-	void enterIF_ELSE_STMT(miniCParser.IF_ELSE_STMTContext ctx);
+	void enterIF_ELSE_STAT(miniCParser.IF_ELSE_STATContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code IF_ELSE_STMT}
+	 * Exit a parse tree produced by the {@code IF_ELSE_STAT}
 	 * labeled alternative in {@link miniCParser#if_st}.
 	 * @param ctx the parse tree
 	 */
-	void exitIF_ELSE_STMT(miniCParser.IF_ELSE_STMTContext ctx);
+	void exitIF_ELSE_STAT(miniCParser.IF_ELSE_STATContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code WHILE_STMT}
+	 * Enter a parse tree produced by the {@code WHILE_STAT}
 	 * labeled alternative in {@link miniCParser#while_st}.
 	 * @param ctx the parse tree
 	 */
-	void enterWHILE_STMT(miniCParser.WHILE_STMTContext ctx);
+	void enterWHILE_STAT(miniCParser.WHILE_STATContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code WHILE_STMT}
+	 * Exit a parse tree produced by the {@code WHILE_STAT}
 	 * labeled alternative in {@link miniCParser#while_st}.
 	 * @param ctx the parse tree
 	 */
-	void exitWHILE_STMT(miniCParser.WHILE_STMTContext ctx);
+	void exitWHILE_STAT(miniCParser.WHILE_STATContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code RETURN_STMT}
+	 * Enter a parse tree produced by the {@code RETURN_STAT}
 	 * labeled alternative in {@link miniCParser#return_st}.
 	 * @param ctx the parse tree
 	 */
-	void enterRETURN_STMT(miniCParser.RETURN_STMTContext ctx);
+	void enterRETURN_STAT(miniCParser.RETURN_STATContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code RETURN_STMT}
+	 * Exit a parse tree produced by the {@code RETURN_STAT}
 	 * labeled alternative in {@link miniCParser#return_st}.
 	 * @param ctx the parse tree
 	 */
-	void exitRETURN_STMT(miniCParser.RETURN_STMTContext ctx);
+	void exitRETURN_STAT(miniCParser.RETURN_STATContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link miniCParser#expression}.
 	 * @param ctx the parse tree
@@ -437,17 +436,17 @@ public interface miniCListener extends ParseTreeListener {
 	 */
 	void exitNULL3(miniCParser.NULL3Context ctx);
 	/**
-	 * Enter a parse tree produced by the {@code ASSIGN}
+	 * Enter a parse tree produced by the {@code ASSIGN_OP}
 	 * labeled alternative in {@link miniCParser#assignment_exp}.
 	 * @param ctx the parse tree
 	 */
-	void enterASSIGN(miniCParser.ASSIGNContext ctx);
+	void enterASSIGN_OP(miniCParser.ASSIGN_OPContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code ASSIGN}
+	 * Exit a parse tree produced by the {@code ASSIGN_OP}
 	 * labeled alternative in {@link miniCParser#assignment_exp}.
 	 * @param ctx the parse tree
 	 */
-	void exitASSIGN(miniCParser.ASSIGNContext ctx);
+	void exitASSIGN_OP(miniCParser.ASSIGN_OPContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ADD_ASSIGN}
 	 * labeled alternative in {@link miniCParser#assignment_exp}.
@@ -867,17 +866,17 @@ public interface miniCListener extends ParseTreeListener {
 	 */
 	void exitOpt_actual_param(miniCParser.Opt_actual_paramContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code ACTUAL_PARAMETER}
+	 * Enter a parse tree produced by the {@code ACTUAL_PARA}
 	 * labeled alternative in {@link miniCParser#actual_param}.
 	 * @param ctx the parse tree
 	 */
-	void enterACTUAL_PARAMETER(miniCParser.ACTUAL_PARAMETERContext ctx);
+	void enterACTUAL_PARA(miniCParser.ACTUAL_PARAContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code ACTUAL_PARAMETER}
+	 * Exit a parse tree produced by the {@code ACTUAL_PARA}
 	 * labeled alternative in {@link miniCParser#actual_param}.
 	 * @param ctx the parse tree
 	 */
-	void exitACTUAL_PARAMETER(miniCParser.ACTUAL_PARAMETERContext ctx);
+	void exitACTUAL_PARA(miniCParser.ACTUAL_PARAContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link miniCParser#actual_param_list}.
 	 * @param ctx the parse tree

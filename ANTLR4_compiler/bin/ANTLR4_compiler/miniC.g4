@@ -15,13 +15,13 @@ type_qualifier		: 'const'								#CONST_NODE;
 type_specifier		: 'int'									#INT_NODE
 		    		| 'void'								#VOID_NODE;
 function_name		: IDENT;
-formal_param		: '(' opt_formal_param ')'				#FORMAL_PARAMETER;
+formal_param		: '(' opt_formal_param ')'				#FORMAL_PARA;
 opt_formal_param	: formal_param_list
 					| ;
 formal_param_list	: param_dcl
 					| formal_param_list ',' param_dcl;
-param_dcl			: dcl_spec declarator					#PARAMETER_DCL;
-compound_st			: '{' opt_dcl_list opt_stat_list '}'	#COMPOUND_STMT;
+param_dcl			: dcl_spec declarator					#PARA_DCL;
+compound_st			: '{' opt_dcl_list opt_stat_list '}'	#COMPOUND_STAT;
 opt_dcl_list		: declaration_list						#DCL_LIST
 					| 										#NULL1;
 declaration_list	: declaration
@@ -35,7 +35,7 @@ declarator			: IDENT									#SIMPLE_VAR
 			 		| IDENT '[' opt_number ']'				#ARRAY_VAR;
 opt_number			: NUMBER
 					| ;
-opt_stat_list		: statement_list						#STMT_LIST
+opt_stat_list		: statement_list						#STAT_LIST
 					| 										#NULL2;
 statement_list		: statement
 				 	| statement_list statement;
@@ -44,15 +44,15 @@ statement			: compound_st
 			 		| if_st
 			 		| while_st
 			 		| return_st;
-expression_st		: opt_expression ';'					#EXP_STMT;
+expression_st		: opt_expression ';'					#EXP_STAT;
 opt_expression		: expression?;
-if_st				: 'if' '(' expression ')' statement		#IF_STMT
-			 		| 'if' '(' expression ')' statement 'else' statement	#IF_ELSE_STMT;
-while_st			: 'while' '(' expression ')' statement	#WHILE_STMT;
-return_st			: 'return' opt_expression ';'			#RETURN_STMT;
+if_st				: 'if' '(' expression ')' statement		#IF_STAT
+			 		| 'if' '(' expression ')' statement 'else' statement	#IF_ELSE_STAT;
+while_st			: 'while' '(' expression ')' statement	#WHILE_STAT;
+return_st			: 'return' opt_expression ';'			#RETURN_STAT;
 expression			: assignment_exp;
 assignment_exp		: logical_or_exp						#NULL3
-			 		| unary_exp '=' assignment_exp			#ASSIGN
+			 		| unary_exp '=' assignment_exp			#ASSIGN_OP
 			 		| unary_exp '+=' assignment_exp			#ADD_ASSIGN
 			 		| unary_exp '-=' assignment_exp			#SUB_ASSIGN
 			 		| unary_exp '*=' assignment_exp			#MUL_ASSIGN
@@ -89,7 +89,7 @@ postfix_exp			: primary_exp							#NULL11
 			 		| postfix_exp '--'						#POST_DEC;
 opt_actual_param 	: actual_param
 					| ;
-actual_param		: actual_param_list						#ACTUAL_PARAMETER;
+actual_param		: actual_param_list						#ACTUAL_PARA;
 actual_param_list	: assignment_exp
 			 		| actual_param_list ',' assignment_exp;
 primary_exp			: IDENT
