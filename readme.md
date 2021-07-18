@@ -56,4 +56,13 @@
      }
      ```
      ![image](https://user-images.githubusercontent.com/59434021/125972618-fbd25559-e1dc-4447-a16d-28dc3deb9f29.png)
-
+- AST 생성
+  - 디자인 패턴 중 visitor 패턴을 이용하여 파스트리의 노드들을 순회하며 AST를 생성
+  - 파스트리라는 데이터 구조를 변경하지 않고 연산을 추가하고 파스트리의 각 노드 클래스가 다양한 타입이기 때문에 visitor 패턴을 사용하였다.
+  - ASTVisitor 클래스를 사용하여 파스트리의 루트 노드부터 모든 노드를 방문하여 AST를 생성
+     ```sh
+     int main() {
+     	int i = 0;
+     }
+     ```
+     ![image](https://user-images.githubusercontent.com/59434021/126068227-7701a254-e6bb-4848-9a15-6a4dda1f399a.png)  
