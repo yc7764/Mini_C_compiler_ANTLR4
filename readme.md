@@ -66,3 +66,12 @@
      }
      ```
      ![image](https://user-images.githubusercontent.com/59434021/126068227-7701a254-e6bb-4848-9a15-6a4dda1f399a.png)  
+- Ucode 생성
+  - 각 심볼들의 데이터를 저장하고 검색할 SymbolTable 클래스 정의
+    - Stack과 HashMap 클래스를 사용하여 구현하였으며, 검색을 위해 lookup()함수를, 테이블에 심볼의 데이터를 저장하기 위하여 insert()함수를 정의
+    - 각 심볼들은 아래와 같은 데이터를 가진다
+      - symbolName : 심볼의 이름
+      - typeSpecifier : NON_SPECIFIER, VOID_TYPE, INT_TYPE 세가지 타입으로 구분
+      - typeQualifier : NON_QUALIFIER, FUNC_TYPE, PARAM_TYPE, CONST_TYPE, VAR_TYPE 5가지 타입으로 구분
+      - base : Ucode 생성 시 주소 계산에 사용할 base 정보
+      - offset : Ucode 생성 시 주소 계산에 사용할 offset 정보
